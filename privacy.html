@@ -17,13 +17,14 @@
   h2 { font-size: 1.2rem; margin-top: 1.6em; }
   .lang-switch { display: flex; gap: 0.5rem; margin: 0 0 1.5rem; }
   .lang-switch button {
-    border: 1px solid currentColor; background: transparent; color: inherit;
+    border: 1px solid #1c1c1e; background: transparent; color: #1c1c1e;
     padding: 0.35rem 0.9rem; border-radius: 999px; cursor: pointer;
     font: inherit; font-size: 0.9rem;
   }
-  .lang-switch button[aria-pressed="true"] { background: currentColor; color: #fff; }
+  .lang-switch button[aria-pressed="true"] { background: #1c1c1e; color: #fff; }
   @media (prefers-color-scheme: dark) {
-    .lang-switch button[aria-pressed="true"] { color: #1c1c1e; }
+    .lang-switch button { border-color: #e6e6e6; color: #e6e6e6; }
+    .lang-switch button[aria-pressed="true"] { background: #e6e6e6; color: #1c1c1e; }
   }
   section[lang="ru"] { display: none; }
   body[data-lang="ru"] section[lang="en"] { display: none; }
